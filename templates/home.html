@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to Portfolio Website Maker</h1>
+    <p>Choose a template to get started:</p>
+    <div class="templates">
+        <div class="template" id="template1">
+            <img src="{{ url_for('static', filename='images/template1.jpg') }}" alt="Template 1">
+            <a href="{{ url_for('portfolio', template='template1') }}">Use this template</a>
+        </div>
+        <div class="template" id="template2">
+            <img src="{{ url_for('static', filename='images/template2.jpg') }}" alt="Template 2">
+            <a href="{{ url_for('portfolio', template='template2') }}">Use this template</a>
+        </div>
+    </div>
+{% endblock %}

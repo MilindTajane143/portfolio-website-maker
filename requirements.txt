@@ -1,0 +1,8 @@
+Werkzeug==2.0.3
+Flask==2.2.3
+flask-mysql==1.6.0
+flask-wtf==1.2.2
+flask-login==0.6.3
+flask-migrate==4.0.7
+mysql-connector-python==9.1.0
+wtforms==3.2.1

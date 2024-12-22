@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ current_user[1] }}!</h1>
+    <form method="POST">
+        <input type="text" name="name" value="{{ current_user[3] }}" placeholder="Full Name"><br>
+        <input type="email" name="email" value="{{ current_user[4] }}" placeholder="Email"><br>
+        <button type="submit">Update Profile</button>
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
